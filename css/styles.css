@@ -393,18 +393,12 @@ button:not(:disabled),
 }
 
 .box {
-  float:left;
-  background-color: #0c63e4;
-  color:#fff;
-  width:125px;
-  line-height: 125px;
-  text-align: center;
-  margin: 10px;
   display: none;
 }
 
 .show {
-  display: block;
+  display: flex;
+  display: inline-block;
 }
 
 
@@ -3097,6 +3091,8 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
+li { cursor: pointer; }
+
 .btn-outline-light {
   --bs-btn-color: #f8f9fa;
   --bs-btn-border-color: #f8f9fa;
@@ -3151,6 +3147,10 @@ textarea.form-control-lg {
 }
 .btn-link:hover {
   color: var(--bs-btn-hover-color);
+}
+
+.btn-group-wrapper {
+  margin-top:20px;
 }
 
 .btn-lg, .btn-group-lg > .btn {
