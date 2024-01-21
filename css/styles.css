@@ -392,6 +392,21 @@ button:not(:disabled),
   cursor: pointer;
 }
 
+.box {
+  float:left;
+  background-color: #0c63e4
+  color:#fff;
+  width:125px;
+  line-height: 125px;
+  text-align: center;
+  margin: 10px;
+}
+
+.show {
+  display: block;
+}
+
+
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
