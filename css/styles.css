@@ -3151,6 +3151,7 @@ li { cursor: pointer; }
 
 .btn-group-wrapper {
   margin-top:20px;
+  flex-wrap: wrap;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3557,6 +3558,8 @@ li { cursor: pointer; }
 
 .btn-group {
   border-radius: 0.375rem;
+  flex-wrap: wrap;
+  
 }
 .btn-group > :not(.btn-check:first-child) + .btn,
 .btn-group > .btn-group:not(:first-child) {
