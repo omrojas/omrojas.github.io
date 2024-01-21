@@ -394,7 +394,7 @@ button:not(:disabled),
 
 .box {
   float:left;
-  background-color: #0c63e4
+  background-color: #0c63e4;
   color:#fff;
   width:125px;
   line-height: 125px;
