@@ -3556,6 +3556,25 @@ li { cursor: pointer; }
   width: auto;
 }
 
+.rect{  
+  margin:0 0 20px;
+  padding: 20px;
+  width 80%;
+  text-align:center;
+  background: rgb(0,167,157);
+background: linear-gradient(90deg, rgba(0,167,157,1) 0%, rgba(229,229,229,1) 100%);
+  color: white;
+}
+.header{
+   margin:0 auto;
+   padding: 5px 10px;
+   width:90%;
+}
+.box{
+  margin: 5px 0;
+}
+.
+
 .btn-group {
   border-radius: 0.375rem;
   flex-wrap: wrap;
