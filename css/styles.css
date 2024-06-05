@@ -93,7 +93,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Montserrat', sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -102,6 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
 }
 
 hr {
@@ -10890,3 +10891,210 @@ ul.align-left {
   margin: 0;
   padding: 0;
 }
+
+
+.navbar .active > .nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--bs-nav-link-color);
+  margin-top: 1px; /* Adjust this value to control the distance between the text and the underline */
+}
+
+/* STYLES*
+
+ /* Custom CSS styles */
+ .box {
+  position: relative;
+  overflow: hidden;
+}
+
+.box::after {
+  content: 'View Case Study';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  opacity: 0;
+  z-index: 999;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover::after {
+  opacity: 1;
+}
+
+.box img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+
+/* jajaja /*
+
+/* Custom CSS for project layout */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .project-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+          margin-left:10px;
+            margin-bottom: 10px;
+        }
+        .feature-list li:before {
+            content: "•";
+            color: #FF6B6B;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+
+
+      .smaller-caption {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+
+    #sections {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
+
+    .image-container {
+      position: relative;
+      width: 100%;
+  }
+  
+  .project-image {
+      width: 100%;
+      display: block;
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .overlay-title {
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      margin: 0;
+  }
+  
+  .image-container:hover .overlay {
+      opacity: 1;
+  }
+
+
+  /* GEMINI CODE */
+  .card {
+    border-color: #e0e0e0; /* Light gray border for a clean look */
+    margin-bottom: 20px; /* Margin for spacing between cards */
+  }
+
+  @media (min-width: 768px) { /* Adjust for screens wider than 768px (desktops) */
+    .row {
+      display: flex; /* Cards displayed in a row */
+      flex-wrap: wrap; /* Cards wrap to next line if needed */
+      justify-content: space-between; /* Space cards evenly */
+    }
+
+    .col {
+      flex: 0 0 33.33%; /* Each card takes up 1/3 of the space */
+    }
+  }
+
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.about-section {
+    padding: 60px 0;
+}
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.skills .progress-bar {
+    background-color: #007bff;
+}
+
+
+ /* Set a specific height for the carousel */
+ #carouselExample {
+  height: 50px; /* Adjust as needed */
+}
+
+/* Set a specific height for the carousel images */
+.carousel-item img {
+  height: 100%; /* Ensure the image fills the carousel container */
+  object-fit: cover; /* Cover the entire container without distorting the image */
+  transition: transform 0.2s;
+}
+
+.gallery-item {
+  width: 200px; /* Set a specific width for the gallery items */
+  margin: 0 auto; /* Center the items horizontally */
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+.profile-photo {
+  width: 500px;
+
+}
+
+.profile-info h2 {
+  margin-top: 0;
+}
+

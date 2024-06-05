@@ -13,6 +13,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!-- Fonts API -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
@@ -24,46 +26,69 @@
                 });
             </script>
             <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
-                        <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">I'd love to hear from you</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
-                                <div class="d-grid">
-                                    <a class="button btn btn-primary btn-lg"  href="mailto:omtttz@hotmail.com">Write me an email</a>
-                                </div>
-                            </div>
-                    <!-- Contact cards-->
-                    <div class="row gx-5 row-cols-2 row-cols-lg-3 py-5">
-                        <div class="col text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-emoji-smile"></i></div>
-                            <div class="h5 mb-2 text-center">UX Deliverables</div>
-                            <div class="text-left">
-                                <ul class="text-muted mb-0 align-left">
-                                    <li>Competitive, Heuristic and Usability Analysis </li>
-                                    <li> User Personas, Use Cases and User Flows</li> 
-                                    <li>Features definition</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-brush"></i></div>
-                            <div class="h5">Web Design</div>
-                            <p class="text-muted mb-0">Landing Pages, E-Shops, Business websites and Portfolios</p>
-                        </div>
-                        <div class="col text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-arrows-move"></i></div>
-                            <div class="h5">Web and Mobile App Design (Prototyping) </div>
-                            <p class="text-muted mb-0">Revamping or conception of a new or existing application in Figma.</p>
-                        </div>
-                    </div>
+ <!-- Header -->
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Hello, I'm [Your Name]</h1>
+        <p class="lead">A Passionate UX Designer</p>
+    </div>
+</header>
+
+<!-- About Section -->
+<section class="about-section text-center">
+    <div class="container">
+        <img src="your-photo-url.jpg" alt="Your Name" class="profile-pic img-fluid mx-auto d-block">
+        <h2>About Me</h2>
+        <p class="text-muted">I am a UX designer with a passion for creating intuitive and engaging user experiences. With a background in [your background], I bring a unique blend of creativity and analytical thinking to my work.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">My Skills</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>Wireframing</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                 </div>
-            </section>
+            </div>
+            <div class="col-md-6">
+                <h4>Prototyping</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>User Research</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>UI Design</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact py-5">
+    <div class="container">
+        <h2 class="text-center">Get in Touch</h2>
+        <p class="text-center text-muted">Feel free to reach out to me through any of the following platforms:</p>
+        <div class="text-center social-icons">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</section>
         </main>
         <!-- Footer-->
         <div id="footer-placeholder"></div>

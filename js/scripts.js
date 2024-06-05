@@ -143,3 +143,21 @@ setInterval(Randomize, 30000);
 
 //////////////////////
 
+document.addEventListener("DOMContentLoaded", function() {
+    const currentPath = window.location.pathname.split("/").pop();
+    const navItems = document.querySelectorAll(".navbar-nav .nav-item");
+
+    navItems.forEach(item => {
+        if (item.getAttribute("id") === currentPath) {
+            item.classList.add("active");
+        }
+    });
+});
+
+
+/* GEMINI CODE */
+$(document).ready(function() {
+    $('.card-header').click(function() {
+      $(this).siblings('.card-body').collapse('toggle');
+    });
+  });

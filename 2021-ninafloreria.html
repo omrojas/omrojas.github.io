@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Omar Martínez - UX Designer</title>
+        <title>Omar A. Rojas - UX Designer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="./assets/img/32x32.png" />
         <!-- Bootstrap icons-->
@@ -13,80 +13,272 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column ">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <div id="nav-placeholder"></div>
-            <script>
-                $(function(){
-                    $("#nav-placeholder").load("nav.html");
-                });
-            </script>
-                <!-- Page Content-->
-                <section class="py-5">
-                    <div class="container px-5 my-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="text-left mb-5">
-                                    <h1 class="fw-bolder">Nina Florería</h1>
-                                    <p class="lead fw-normal text-muted mb-0">E-commerce Web Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Project Hero Cover-->
-                        <section>
-                            <div class="row">
-                                <!--Project Specifications-->
-                                <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h6>Contribution</h6>
-                                                <p>As part of my graduation school projects I helped Nina Florería, a business from Querétaro MX, translating their operations into the digital realm. </p>
-                                            </div>
-                                        <div class="col-sm-12">
-                                            <h6>My Role</h6>
-                                            <p>UX/UI Designer, Project Manager, Web Desinger </p>
-                                        </div>
-                                        <div class="w-100"></div>
-                                        <div class="col">
-                                            <h6>Tools</h6>
-                                            <p>Hotjar, Figma, Wordpress, Elementor </p>
-                                        </div>
-                                        <div class="col">
-                                            <h6>Duration</h6>
-                                            <p>3 months </p>
-                                        </div>
+          <!-- Navigation-->
+          
+          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/navbar-logo.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item active" id="portfolio">
+                            <a class="nav-link" href="index.html">Selected Works</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Projects Overview</a></li>
+                            </ul>
+                        </li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="about.html">Experiments</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link"  target="_blank" rel="noopener noreferrer" href="./assets/english-resume-2024.pdf">Resume</a></li>-->
+                        <li class="nav-item" id="contact">
+                            <a class="nav-link" href="about.html">Information</a>
+                        </li>
+                        <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container px-5">
+                <div class="container">
+                        <div class="row mt-5">
+                            <div class="col-md-12 position-relative">
+                                <div class="image-container">
+                                    <img src="./assets/img/ninafloreria/project-cover.png" alt="Project Image" class="project-image">
+                                    <div class="overlay">
+                                        <h2 class="overlay-title">Nina Florería: Web E-commerce</h2>
                                     </div>
                                 </div>
-                                <!--Project Cover Image-->
-                                <div class="col-sm-6">
-                                    <img class="img-fluid rounded-3 mb-5" src="./assets/img/ninafloreria/1300x700.jpg"  alt="..." />
-                                </div>
                             </div>
+                            <div class="col-md-6">
+                                <p class="project-description">Nina Fleurs et Déco is a company originally from the city of Querétaro, they offer as part of their services the sale of floral arrangements and different seasonal gifts. Due to the pandemic caused by COVID-19, the Medina Preciado family decided to obtain a website where they could sell their services, in addition to knowing in depth their identity and values ​​that stand out to them.</p>
+                            </div>
+                            <div class="col-md-3 mt">
+                                <ul class="feature-list">
+                                    <li>Vision and Scope Document</li>
+                                    <li>Software Requirements Specification</li>
+                                    <li>Weekly Project Execution logs</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mt">
+                                <ul class="feature-list">
+                                    <li>Wireframes</li>
+                                    <li>High definition prototypes</li>
+                                    <li>Usability Test Reports</li>
+                                    <li>Website deployment in Wordpress/Woo-Commerce</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Requirements Elicitation -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">1. Requirements Elicitation </h2>
+                            <p class="section-description">The Software Requirements Specification (ERS) is a complete description of the behavior of the system to be developed. Includes a set of use cases that describe all the interactions users will have with the software. </p>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">MVP </h4>
+                            <p class="section-description mt-4"> Nina Florería wants to make its value proposition known through the brand image and design, emulate the experience of a physical store within the website and sell its product catalog through the website.
+                            </p>
+                        </div>
+
+                        <div class="col-md-12 mt-5">
+                            <h4 class="section-title">Initial Release Features</h4>
+                            <p class="section-description mt-4"> Personas are a critical method for orienting design and development teams to user experience. They also provide a conduit for conveying a broad range of qualitative and quantitative data, and focus attention on aspects of design and use that other methods do not.</p>
+                        </div>
+                        <div class="container">
                             <div class="row">
-                                <div class="col-6">
-                                    <a class="text-decoration-none" href="2022-carambolamedia.html">
-                                        <i class="bi-arrow-left"></i>
-                                        Previous Project 
-                                    </a>
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feature 1 (FE-1)</h5>
+                                    <p class="card-text">The user will be able to get to know Nina Fleurs et Déco's value proposition in the first instance through its Landing Page where he/she can intuitively navigate through the rest of the site.</p>
+                                  </div>
                                 </div>
-                                <div class="col-6 text-end ">
-                                    <a class="text-decoration-none" href="2020-trashtag-app.html">
-                                        Next project
-                                        <i class="bi-arrow-right"></i>
-                                    </a>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feature 2 (FE-2)</h5>
+                                    <p class="card-text">You will be able to select your preferred products within a digital shopping cart while the cart displays the total amount of products.</p>
+                                  </div>
                                 </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feature 3 (FE-3)</h5>
+                                    <p class="card-text">When a user is satisfied with their items, they can proceed to checkout, where they can pay for them and place their order with the necessary shipping address and personalisation.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feature 4 (FE-4)</h5>
+                                    <p class="card-text">Un usuario podrá navegar en las distintas páginas de ninafloreria.com, en donde podrá encontrar una serie de información pertinente como cobertura de envíos, FAQ, logística de entregas, cuidado de sus arreglos.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feature 5 (FE-5)</h5>
+                                    <p class="card-text">The website shall contain an approved design and iconography.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feature 6 (FE-)</h5>
+                                    <p class="card-text">A user can subscribe to a newsletter to receive updates about the business, trends, important dates and promotions.</p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                    </section> 
-            </main>
+                          </div>
+                        
+                    </div>
+                
+                    <!-- 2. IxD and UX Design, Prototyping and Testing -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">UX Design, Prototyping and Testing </h2>
+                            <p class="section-description">Prototypes are a limited representation of a product, allowing parties to test it in real-life situations or explore its use, thus creating an iterative design process that generates quality. A prototype can be anything from a piece of paper with simple drawings to complex software.. </p>
+                        </div>
+                    </div>
+                    <!-- 2.1 Wireframes -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Wireframes</h4>
+                            <p class="section-description mt-4">
+                                I chose to try a new tool to prototype the solution in a faster way, I chose Balsamiq Wireframes, obtaining the following result. As you can see, there is a more apparent vision of a prototype and nothing like the final product, which is very important when working with a team without much technical knowledge.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/ninafloreria/wireframes.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Wireframes made in Balsamiq</i></p>
+                        </div>  
+                    </div>
+                    <!-- 2.2 Hi-Fi Mockups -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Hi-Fi Mockups</h4>
+                            <p class="section-description mt-4">
+                              Hi-fi mockups enable designers to refine aesthetics and usability, ensuring the design aligns closely with user expectations and business goals. </p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/ninafloreria/hifimockup.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Design of Nina Floreria's Website on an iMac.</i></p>
+                        </div>  
+                    </div>
+
+                      <!-- 2.3 Usability Tests-->
+                      <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Usability Tests</h4>
+                            <p class="section-description mt-4">
+                              Usability tests are a fundamental component of user-centered design, providing invaluable insights into how real users interact with a product. By observing users as they perform specific tasks, designers can identify pain points, uncover usability issues, and gather qualitative feedback that highlights areas for improvement. </p>
+                        </div>
+                              <!-- Grid Gallery -->
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut1.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal1">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut2.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal2">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut3.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal3">
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut4.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal4">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut5.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal5">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut6.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal6">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut7.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal7">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut8.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal8">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+              <img src="./assets/img/ninafloreria/ut9.jpg" alt="Image 1" data-toggle="modal" data-target="#exampleModal9">
+          </div>
+      </div>
+
+
+
+                       
+                    </div>
+                    <!-- 3. Website Production -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">Site construction, configuration and development</h2>
+                            <p class="section-description">This website was deployed on WordPress and Woo-Commerce successfully. Unfortunately, due to business decisions the owners stopped paying for the server costs. </p>
+                        </div>
+                    </div>
+                    
+        </main>
+        <!-- Footer-->
         <!-- Footer-->
         <div id="footer-placeholder"></div>
-        <script>
-            $(function(){
-                $("#footer-placeholder").load("footer.html");
-            });
-        </script>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+          <div class="container px-5">
+              <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+                  <div class="col-auto"><div class="small m-0 text-black">Copyright &copy; Omar Rojas 2024</div></div>
+                  <div class="col-auto">
+
+                  </div>
+              </div>
+          </div>
+      </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

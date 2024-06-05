@@ -5,123 +5,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Omar Martínez - UX Designer</title>
+        <title>Omar Rojas - UX Designer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="./assets/img/32x32.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!-- Fonts API -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column h-100 vh-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <div id="nav-placeholder"></div>
-            <script>
-                $(function(){
-                    $("#nav-placeholder").load("nav.html");
-                });
-            </script>
-            <!-- Header-->
-            <header class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-dark mb-2">Hello! 👋 I'm Omar</h1>
-                                <p class="lead fw-normal text-dark-50 mb-4">I help businesses by creating value for their products using Design and Development.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#projects">See my projects</a>
-                                    <a class="btn btn-outline-dark btn-lg px-4" target="_blank" rel="noopener noreferrer" href="./assets/english-resume-2024.pdf">Download my resume</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="./assets/img/hero.jpg" alt="..." /></div>
-                    </div>
-                </div>
-            </header>
+           <div id="nav-placeholder"></div>
+           <script>
+               $(function(){
+                   $("#nav-placeholder").load("nav.html");
+               });
+           </script>
             <!--Projects Section-->
-            <section class="py-5" id="projects">
-                <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">My Work</h1>
-                        <p class="lead fw-normal text-muted mb-0">Design and Development portfolio</p>
-                        <div class="btn-group-wrapper">
-                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown" id="buttons">      
-                                <button type="button" class="btn btn-primary" onclick="filterObjects('all')">All</button>
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-primary dropdown-toggle" onclick="filterObjects('ux')"  data-bs-toggle="dropdown" aria-expanded="false">UX</button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" onclick="filterObjects('ux-writing')">UX Writing</a></li>
-                                            <li><a class="dropdown-item" onclick="filterObjects('user-flows')">User Flows</a></li>
-                                        </ul>
-                                    </div>
-                                <button type="button" class="btn btn-primary" onclick="filterObjects('ui')">UI</button>
-                                <button type="button" class="btn btn-primary" onclick="filterObjects('webdes')">Web Design</button>
-                                <button type="button" class="btn btn-primary" onclick="filterObjects('webdev')">Web Dev</button>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="row gx-5 objects">
-                        <div class="col-lg-6 box ux ui">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/bid4care/cover.jpg" alt="Bi4Care's logo" />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2024-bid4care.html">Bid4Care (2024)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 box webdes">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/bikeflow/cover.jpg" alt="Bike Flow's logo" />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2024-bikeflow.html">Bikeflow (2024)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 box webdes">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/edgarhdz/cover.jpg" alt="Edgar Hernández's personal logo" />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2023-edgarhdz.html">Edgar Hernández (2023)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 box ux user-flows">
-                            <div class="position-relative mb-5 mb-lg-0">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/tokenproof/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2023-tokenproof.html">Tokenproof (2023)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 box webdev">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/cafeinamkt/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2023-cafeinamkt.html">Cafeína MKT (2023)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 box ux ux-writing">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/carambolamedia/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2022-carambolamedia">Carambola Media (2022)</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 box webdes">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/fairplay/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2022-fairplay.html">Fairplay (2022)</a>
+            <section class="py-3" id="projects"> <!-- Reduced padding from py-5 to py-3 -->
+                <div class="container-fluid">
+                    <div class="row gx-3 objects"> <!-- Reduced gutter width from gx-5 to gx-3 -->
+                        <div class="col-lg-6 box ux ui ux">
+                            <div class="position-relative "> <!-- Reduced bottom margin from mb-5 to mb-3 -->
+                                <img class="img-fluid rounded-3 mb-2" src="./assets/img/bid4care/cover-index.png" alt="Bi4Care's logo" /> <!-- Reduced bottom margin from mb-3 to mb-2 -->
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2024-bid4care.html"></a>
                             </div>
                         </div>
                         <div class="col-lg-6 box ux webdes">
-                            <div class="position-relative mb-5 mb-lg-0">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/ninafloreria/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2021-ninafloreria.html">Nina Florería (2021)</a>
+                            <div class="position-relative  mb-lg-0"> <!-- Reduced bottom margin from mb-5 to mb-3 -->
+                                <img class="img-fluid rounded-3 mb-2" src="./assets/img/ninafloreria/cover.png" alt="..." /> <!-- Reduced bottom margin from mb-3 to mb-2 -->
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2021-ninafloreria.html"></a>
                             </div>
                         </div>
                         <div class="col-lg-6 box ux ui">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/trashtag-app/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2020-trashtag-app.html">Trashtag App (2020)</a>
+                            <div class="position-relative "> <!-- Reduced bottom margin from mb-5 to mb-3 -->
+                                <img class="img-fluid rounded-3 mb-2" src="./assets/img/trashtag-app/cover.png" alt="..." /> <!-- Reduced bottom margin from mb-3 to mb-2 -->
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2020-trashtag-app.html"></a>
                             </div>
                         </div>
                         <div class="col-lg-6 box ux ui">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="./assets/img/inecc/cover.jpg" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2018-inecc.html">INECC (2018)</a>
+                            <div class="position-relative "> <!-- Reduced bottom margin from mb-5 to mb-3 -->
+                                <img class="img-fluid rounded-3 mb-2" src="./assets/img/inecc/cover.png" alt="..." /> <!-- Reduced bottom margin from mb-3 to mb-2 -->
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="2018-inecc.html"></a>
                             </div>
                         </div>
                     </div>
@@ -274,15 +205,24 @@
                 </div>
             </section> -->
         </main>
-        <!-- Footer-->
+         
         <div id="footer-placeholder"></div>
-        <script>
-            $(function(){
-                $("#footer-placeholder").load("footer.html");
-            });
-        </script>
+         <!-- Footer-->
+         <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-black">Copyright &copy; Omar Rojas 2024</div></div>
+                    <div class="col-auto">
+ 
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <!-- Custom JS -->
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>

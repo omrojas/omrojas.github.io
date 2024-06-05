@@ -13,80 +13,281 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column ">
         <main class="flex-shrink-0">
-           <!-- Navigation-->
-           <div id="nav-placeholder"></div>
-           <script>
-               $(function(){
-                   $("#nav-placeholder").load("nav.html");
-               });
-           </script>
-                <!-- Page Content-->
-                <section class="py-5">
-                    <div class="container px-5 my-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="text-left mb-5">
-                                    <h1 class="fw-bolder">Trashtag App</h1>
-                                    <p class="lead fw-normal text-muted mb-0">Mobile App Design and Development</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Project Hero Cover-->
-                        <section>
-                            <div class="row">
-                                <!--Project Specifications-->
-                                <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h6>Contribution</h6>
-                                                <p>Trashtag are a group of IDC students from around the world who have formed an alliance and want to save Israel's views from pollution. I helped them create a hybrid mobile application to register the amount of picked up garbage during their clean-ups. </p>
-                                            </div>
-                                        <div class="col-sm-12">
-                                            <h6>My Role</h6>
-                                            <p>UX/UI Designer, Project Manager </p>
-                                        </div>
-                                        <div class="w-100"></div>
-                                        <div class="col">
-                                            <h6>Tools</h6>
-                                            <p>Marvel App, Figma, Google Suite, Flutter</p>
-                                        </div>
-                                        <div class="col">
-                                            <h6>Duration</h6>
-                                            <p>5 months </p>
-                                        </div>
+          <!-- Navigation-->
+          
+          <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/navbar-logo.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item active" id="portfolio">
+                            <a class="nav-link" href="index.html">Selected Works</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Projects Overview</a></li>
+                            </ul>
+                        </li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="about.html">Experiments</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link"  target="_blank" rel="noopener noreferrer" href="./assets/english-resume-2024.pdf">Resume</a></li>-->
+                        <li class="nav-item" id="contact">
+                            <a class="nav-link" href="about.html">Information</a>
+                        </li>
+                        <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+                <div class="container px-5">
+
+                <section>
+                    <div class="container">
+                        <div class="row mt-5">
+                            <div class="col-md-12 position-relative">
+                                <div class="image-container">
+                                    <img src="./assets/img/trashtag-app/Trashtag-cover.png" alt="Project Image" class="project-image">
+                                    <div class="overlay">
+                                        <h2 class="overlay-title">Trashtag App: Hybrid Mobile Application</h2>
                                     </div>
                                 </div>
-                                <!--Project Cover Image-->
-                                <div class="col-sm-6">
-                                    <img class="img-fluid rounded-3 mb-5" src="./assets/img/trashtag-app/1300x700.jpg"  alt="..." />
-                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <a class="text-decoration-none" href="2021-ninafloreria.html">
-                                        <i class="bi-arrow-left"></i>
-                                        Previous Project 
-                                    </a>
-                                </div>
-                                <div class="col-6 text-end ">
-                                    <a class="text-decoration-none" href="2018-inecc.html">
-                                        Next project
-                                        <i class="bi-arrow-right"></i>
-                                    </a>
-                                </div>
+                            <div class="col-md-6">
+                                <p class="project-description">TrashTag is a non-profit environmental initiative focused on people's approach to waste. They want to change the way people behave towards it by creating a supportive community through education and experience with the help of a mobile application for iOS and Android.</p>
                             </div>
-                    </section> 
-            </main>
-            <!-- Footer-->
+                            <div class="col-md-3 mt">
+                                <ul class="feature-list">
+                                    <li>Software Requirements Specification</li>
+                                    <li>Software Architecture</li>
+                                    <li>MVP definition and analysis</li>
+                                    <li>User Experience Design</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mt">
+                                <ul class="feature-list">
+                                    <li>User Interface Design & Prototyping</li>
+                                    <li> Illustration/Icon design</li>
+                                    <li>Usability Testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Strategy Section -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">1. Strategy </h2>
+                            <p class="section-description">Defining the requirements and functionalities of the product. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">References</h4>
+                            <p class="section-description mt-4"> Defines the criteria and key elements to develop the new TrashTag’s App that concentrates and disseminates the state of the art of mobile and web applications for litter recollection.
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/references.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Interacion Patterns of National Geographic's Marine Debris Tracker App.</p>
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <h4 class="section-title">Personas</h4>
+                            <p class="section-description mt-4"> Personas are a critical method for orienting design and development teams to user experience. They also provide a conduit for conveying a broad range of qualitative and quantitative data, and focus attention on aspects of design and use that other methods do not.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/personas.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Illustration of the three personas I created in Figma.</p>
+                        </div>
+                        
+                    </div>
+                
+                    <!-- 2. Scope Section -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">2. Scope</h2>
+                            <p class="section-description">Defining the requirements and functionalities of the project. </p>
+                        </div>
+                    </div>
+                    <!-- 2.1 Smart Framework -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Smart Framework</h4>
+                            <p class="section-description mt-4">
+                                To make sure their goal is clear and reachable, this should be Specific, Measurable, Achievable, Relevant, Time bound.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/smart-framework.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Representation of measruable metrics made with Figma.</i></p>
+                        </div>  
+                    </div>
+                    <!-- 2.2 Objectives -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Objectives</h4>
+                            <p class="section-description mt-4">
+                                To change Israeli Society’s (starting in Herzliya) behaviour towards littering and waste while creating a supportive community through experience and learning that will enable people to lead a less wasteful life and help propose solutions in their own field.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/objectives.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">It speaks for itself..</i></p>
+                        </div>  
+                    </div>
+                
+                    <!-- 3. Structure Section -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">3. Structure</h2>
+                            <p class="section-description">Outlining the information architecture and interaction design. </p>
+                        </div>
+                    </div>
+                    <!-- 3.1 Journey Maps -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Journey Maps</h4>
+                            <p class="section-description mt-4"> The reasons for creating customer journey maps include understanding the path and channels of the users take to a product. It's a valuable tool that can be used to forecast the path of future users as well.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/journey-maps.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Illustration of each persona's journey maps. Made in Figma.</i></p>
+                        </div>  
+                    </div>
+                    <!-- 3.2 Sitemap -->
+                    <div class="row">
+                        <div class="col-md-12 mt-5">
+                            <h4 class="section-title">Sitemap</h4>
+                            <p class="section-description mt-4"> A sitemap is a diagrammatic representation of a hierarchical system. It usually depicts the parent-sibling relationship between pages in a website, showing how sub pages might be arranged underneath their parent groupings. This arrangement forms a map of the site.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/sitemap.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">A tiny Sitemap!</p>
+                        </div>  
+                    </div>
+                
+                    <!-- 4. Skeleton Section -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">4. Skeleton</h2>
+                            <p class="section-description">Describing the wireframes, layout, and navigational elements. </p>
+                        </div>
+                    </div>
+                    <!-- 4. 1 Wireframes-->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Wireframes</h4>
+                            <p class="section-description mt-4"> They’re purposely inelegant yet they’re descriptive. Within minutes, user-journeys can be visualised to a wider team opening channels of collaboration and understanding. Understanding low-fi mockups require an inherent understanding of GUI design.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/wireframes.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Wireframes I made in Marvel App.</p>
+                        </div>  
+                    </div>
+                    <!-- 4. 2 Navigation -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Navigation</h4>
+                            <p class="section-description mt-4"> Later, in order to check that the requirements and content of the application were being included in our planning and that nothing was being missed, we decided to create wireframes of the entire application and even a prototype with these to be able to acquire direct feedback with the mock-up of the application working and verify that the user journeys were being considered.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/interaction patterns.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">I expanded the navigation using Figma now!</p>
+                        </div>  
+                    </div>
+                
+                    <!-- 5. Surface Section -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">5. Surface</h2>
+                            <p class="section-description">Showing the final visual design and interface elements. </p>
+                        </div>
+                    </div>
+                    <!-- 5.1 Typography -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Typography</h4>
+                            <p class="section-description mt-4"> 
+                                This typographical scale records a consistency throughout the application. Adding value and generating opportunity to climb to the top.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/typography.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Designed in Figma, as well.</p>
+                        </div>  
+                    </div>
+                    <!-- 5.2 Interaction components -->
+                    <div class="row">
+                        <div class="col-md-12 mt-5">
+                            <h4 class="section-title">Interaction Components</h4>
+                            <p class="section-description mt-4"> I designed every one of this elements using Figma. </p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/buttons-and-icons.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Cute, right?</p>
+                        </div>  
+                    </div>
+                      <!-- 5.3 Color Palettes -->
+                      <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h4 class="section-title">Color Palettes</h4>
+                            <p class="section-description mt-4"> 
+                                TrashTag lacked a style guide or even an attractive logo, so I helped them achieve all this with a small style guide that will help them establish their identity throughout their entire operation.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/color palettes.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Color palettes generated in https://www.materialpalette.com </p>
+                        </div>  
+                    </div>
+                    <!-- 5.3 Hi-Fi Mockups -->
+                    <div class="row">
+                        <div class="col-md-12 mt-5">
+                            <h4 class="section-title">Hi-Fidelity Mockups</h4>
+                            <p class="section-description mt-4"> They are, strictly speaking, a computer-based interactive representation of the product in its closest resemblance to the final design in terms of details and functionality. </p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="./assets/img/trashtag-app/hifi-mockups.png" alt="Strategy Image" class="project-image">
+                            <p class="img-caption smaller-caption text-center">Mockups I completely developed in Figma.</p>
+                        </div>  
+                    </div>
+                    <!-- 6. Conclusion Section -->
+                    <div class="row mt-5">
+                        <div class="col-md-12 bg-gradient bg-light" id="sections">
+                            <h2 class="section-title">Conclusion</h2>
+                            <p class="section-description">Summarizing the project outcomes and key learnings. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <!-- Footer-->
         <div id="footer-placeholder"></div>
-        <script>
-            $(function(){
-                $("#footer-placeholder").load("footer.html");
-            });
-        </script>
+         <!-- Footer-->
+         <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-black">Copyright &copy; Omar Rojas 2024</div></div>
+                    <div class="col-auto">
+ 
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
