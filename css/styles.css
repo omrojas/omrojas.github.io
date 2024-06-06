@@ -11098,3 +11098,7 @@ ul.align-left {
   margin-top: 0;
 }
 
+.profile-photo {
+  max-width: 100%;
+  height: auto;
+}
