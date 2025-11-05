@@ -11059,7 +11059,8 @@ ul.align-left {
     font-size: 24px;
 }
 .skills .progress-bar {
-    background-color: #007bff;
+  background-color: rgb(164,120,232);
+  background-color: linear-gradient(0deg, rgba(164,120,232,1) 0%, rgba(81,108,247,1) 100%);
 }
 
 
