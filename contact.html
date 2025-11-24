@@ -18,13 +18,38 @@
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <div id="nav-placeholder"></div>
-            <script>
-                $(function(){
-                    $("#nav-placeholder").load("nav.html");
-                });
-            </script>
+<!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/navbar-logo.svg" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <!-- Selected Works -->
+                    <li class="nav-item" id="portfolio">
+                    <a class="nav-link" href="../index.html">Selected Works</a>
+                    </li>
+
+        <!-- Experiments -->
+        <li class="nav-item active" id="experiments">
+          <a class="nav-link" href="experiments.html">Experiments</a>
+        </li>
+
+        <!-- Information -->
+        <li class="nav-item" id="contact">
+          <a class="nav-link" href="../about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
             <!-- Page content-->
  <!-- Header -->
 <header class="bg-primary text-white text-center py-5">
