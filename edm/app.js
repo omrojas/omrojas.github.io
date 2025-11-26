@@ -1,5 +1,5 @@
 // =======================================================
-// 1. TUS DATOS - JSON (36 Highlights) - ESTRUCTURA FINAL
+// 1. TUS DATOS - JSON (6 Épocas x 3 Highlights) - FILTRADO FINAL
 // =======================================================
 const historiaMapas = [
     {
@@ -56,54 +56,6 @@ const historiaMapas = [
                     idioma: "N/A"
                 }
             },
-            // 4. LASCAUX (~17,000 a.C.)
-            {
-                titulo: "Mapa Estelar en Lascaux",
-                pais: "Lascaux (Francia)",
-                fecha: "~17,000 a.C.",
-                imagen: "./assets/maps/era1_map4_lascaux.webp",
-                dato_rapido: "Patrones estelares junto a figuras animales, posiblemente la primera carta astronómica.",
-                tipo: "Pared de cueva / Pintura Rupestre",
-                importancia: "Primer registro astronómico que muestra la conciencia del espacio celeste y su vínculo con ciclos terrestres o rituales.",
-                ficha: {
-                    material: "Pared de cueva (caliza) y pigmentos minerales (ocre, carbón)",
-                    dimensions: "Parte de un mural mayor",
-                    ubicacion: "Cueva de Lascaux, Dordoña, Francia",
-                    idioma: "N/A"
-                }
-            },
-            // 5. BEDOLINA (~12,000 a.C.)
-            {
-                titulo: "Petroglifos de Bedolina (Val Camonica)",
-                pais: "Val Camonica (Italia)",
-                fecha: "~12,000 a.C.",
-                imagen: "./assets/maps/era1_map5_bedolina.webp",
-                dato_rapido: "Contiene parcelas agrícolas y caminos, evidenciando una planificación territorial temprana.",
-                tipo: "Petroglifo (Grabado en roca)",
-                importancia: "Considerado uno de los primeros esquemas territoriales y agrícolas conocidos, marcando la transición hacia el sedentarismo.",
-                ficha: {
-                    material: "Roca (Superficie granítica)",
-                    dimensions: "Paneles que abarcan varios metros cuadrados",
-                    ubicacion: "Parque Nacional de los Petroglifos, Val Camonica, Italia",
-                    idioma: "N/A"
-                }
-            },
-            // 6. ÇATALHÖYÜK (~6,200 a.C.)
-            {
-                titulo: "Plano Urbano de Çatalhöyük",
-                pais: "Anatolia (Turquía)",
-                fecha: "~6,200 a.C.",
-                imagen: "./assets/maps/era1_map6_catalhoyuk.webp",
-                dato_rapido: "Mural que representa la disposición de las casas y un volcán cercano, el plano urbano más antiguo.",
-                tipo: "Mural en Yeso / Plano Urbano",
-                importancia: "El primer plano urbano conocido, fundamental para entender la organización social y territorial de las primeras ciudades.",
-                ficha: {
-                    material: "Pintura sobre yeso",
-                    dimensions: "Panel mural de aproximadamente 3 metros",
-                    ubicacion: "Museo de las Civilizaciones de Anatolia, Ankara (Reconstrucción)",
-                    idioma: "N/A"
-                }
-            },
         ]
     },
     {
@@ -112,7 +64,7 @@ const historiaMapas = [
         rango_anos: "3,200 a.C. – Siglo V d.C.",
         descripcion: "Transición de los mapas simbólicos a la cartografía matemática y científica, dominada por las proyecciones griegas y la planificación de rutas romanas.",
         highlights: [
-            // 1. Nuzi (~2,500 a.C.)
+            // 1. Nuzi
             {
                 titulo: "Mapa Topográfico de Nuzi",
                 pais: "Nuzi (Irak)",
@@ -128,7 +80,7 @@ const historiaMapas = [
                     idioma: "Acadio"
                 }
             },
-            // 2. Egipcios (~1,300 a.C.)
+            // 2. Egipcios
             {
                 titulo: "Mapas Topográficos Egipcios",
                 pais: "Antiguo Egipto",
@@ -144,39 +96,7 @@ const historiaMapas = [
                     idioma: "Egipcio Jeroglífico"
                 }
             },
-            // 3. Papiro de Turín (~1,150 a.C.)
-            {
-                titulo: "Papiro Minero de Turín",
-                pais: "Antiguo Egipto",
-                fecha: "~1,150 a.C.",
-                imagen: "./assets/maps/era2_map3_turin.webp",
-                dato_rapido: "El **primer mapa geológico y minero** de la historia, mostrando tipos de roca y rutas logísticas.",
-                tipo: "Rollo de papiro",
-                importancia: "Combina topografía con geología, planificando la explotación de recursos para la construcción de monumentos faraónicos.",
-                ficha: {
-                    material: "Papiro (tinta negra, roja y marrón)",
-                    dimensions: "Fragmentos que sumaban aprox. 2.8 metros",
-                    ubicacion: "Museo Egipcio de Turín",
-                    idioma: "Egipcio Hierático"
-                }
-            },
-            // 4. Imago Mundi (~600 a.C.)
-            {
-                titulo: "Imago Mundi Babilonio",
-                pais: "Sippar (Irak)",
-                fecha: "~600 a.C.",
-                imagen: "./assets/maps/era2_map4_imago_mundi.webp",
-                dato_rapido: "La **primera visión conceptual del cosmos** y la cosmología babilocéntrica.",
-                tipo: "Tablilla de arcilla con texto cuneiforme",
-                importancia: "No busca precisión geográfica, sino explicar el lugar del hombre en el universo con una visión simbólica y mitológica.",
-                ficha: {
-                    material: "Arcilla cocida",
-                    dimensions: "12.2 x 8.2 cm",
-                    ubicacion: "Museo Británico, Londres",
-                    idioma: "Acadio"
-                }
-            },
-            // 5. Itinerario de Antonino (Siglo III d.C.)
+            // 5. Itinerario de Antonino
             {
                 titulo: "Itinerario de Antonino",
                 pais: "Imperio Romano",
@@ -189,22 +109,6 @@ const historiaMapas = [
                     material: "Originalmente rollos de pergamino (copias medievales existentes)",
                     dimensions: "Cubre miles de kilómetros de red viaria",
                     ubicacion: "Varios manuscritos",
-                    idioma: "Latín"
-                }
-            },
-            // 6. Tabula Peutingeriana (Siglo IV d.C.)
-            {
-                titulo: "Tabula Peutingeriana",
-                pais: "Imperio Romano",
-                fecha: "Siglo IV d.C.",
-                imagen: "./assets/maps/era2_map6_peutingeriana.webp",
-                dato_rapido: "Un mapa de carreteras de **6.75 metros de largo**, distorsionado para enfatizar rutas y ciudades clave.",
-                tipo: "Itinerarium Pictum (Mapa de ruta ilustrado)",
-                importancia: "Ejemplo más famoso de la cartografía práctica romana, no geográfica, sino funcional para el viajero.",
-                ficha: {
-                    material: "Pergamino (copia medieval de un original romano)",
-                    dimensions: "6.75 m x 0.34 m",
-                    ubicacion: "Biblioteca Nacional de Austria, Viena",
                     idioma: "Latín"
                 }
             },
@@ -230,22 +134,6 @@ const historiaMapas = [
                     dimensions: "Generalmente ilustraciones pequeñas dentro de libros (Etimologías)",
                     ubicacion: "Monasterios europeos (iniciado en la Hispania visigoda)",
                     idioma: "Latín"
-                }
-            },
-            // 2. Rutas y Navegación Vikinga
-            {
-                titulo: "Rutas y Navegación Vikinga",
-                pais: "Escandinavia",
-                fecha: "Siglo IX - XI",
-                imagen: "./assets/maps/era3_map2_vikinga.webp",
-                dato_rapido: "Descubrimiento de América (Vinland) basado en la observación natural, sin mapas de papel.",
-                tipo: "Tradición oral / Mapas mentales",
-                importancia: "La exploración a gran escala basada en la navegación sensorial (aves, corrientes) y por estima.",
-                ficha: {
-                    material: "N/A (Sagas orales, gnomón, piedra solar)",
-                    dimensions: "N/A (Abarcaba todo el Atlántico Norte)",
-                    ubicacion: "N/A",
-                    idioma: "Nórdico antiguo"
                 }
             },
             // 3. Mapas Chinos (Dinastía Song)
@@ -278,38 +166,6 @@ const historiaMapas = [
                     dimensions: "Atlas de 70 mapas regionales",
                     ubicacion: "BNF, París",
                     idioma: "Árabe"
-                }
-            },
-            // 5. Cartas Portulanas
-            {
-                titulo: "Cartas Portulanas",
-                pais: "Mediterráneo (Italia/España)",
-                fecha: "Siglos XIII - XV",
-                imagen: "./assets/maps/era3_map5_portulanas.webp",
-                dato_rapido: "Los primeros mapas hechos por y para navegantes reales, con líneas de rumbo (vientos).",
-                tipo: "Mapa en piel de oveja (vitela)",
-                importancia: "Ignoran el interior para centrarse obsesivamente en costas y puertos con precisión. Base para el comercio marítimo.",
-                ficha: {
-                    material: "Vitela (piel de alta calidad)",
-                    dimensions: "Grandes pliegos enrollables",
-                    ubicacion: "Escuelas de Génova, Venecia y Mallorca",
-                    idioma: "Latín/Italiano/Catalán"
-                }
-            },
-            // 6. Mapa de Fra Mauro
-            {
-                titulo: "Mapamundi de Fra Mauro",
-                pais: "Venecia (Italia)",
-                fecha: "1459 d.C.",
-                imagen: "./assets/maps/era3_map6_mauro.webp",
-                dato_rapido: "El 'mapa del fin del mundo' medieval, financiado por Portugal, que intentó romper con la tradición de Ptolomeo.",
-                tipo: "Mapa circular sobre pergamino",
-                importancia: "Representa la culminación de la cartografía medieval europea, combinando la tradición T-O con información real de viajeros.",
-                ficha: {
-                    material: "Pergamino sobre madera",
-                    dimensions: "2.4 x 2.4 metros (gran tamaño)",
-                    ubicacion: "Biblioteca Nazionale Marciana, Venecia",
-                    idioma: "Latín/Italiano"
                 }
             },
         ]
@@ -368,54 +224,6 @@ const historiaMapas = [
                     idioma: "Italiano"
                 }
             },
-            // 4. Waldseemüller (1507)
-            {
-                titulo: "Mapa de Waldseemüller",
-                pais: "Sacro Imperio Romano Germánico",
-                fecha: "1507",
-                imagen: "./assets/maps/era4_map4_waldseemuller.webp",
-                dato_rapido: "Primer mapa en usar el nombre **'América'** para referirse al Nuevo Mundo.",
-                tipo: "Mapa del mundo impreso",
-                importancia: "Bautizó al continente americano y fue el primer mapa en mostrar el Nuevo Mundo separado de Asia por un océano.",
-                ficha: {
-                    material: "Impresión (12 paneles xilográficos)",
-                    dimensions: "Aprox. 2.4 m x 1.2 m",
-                    ubicacion: "Biblioteca del Congreso, EE. UU.",
-                    idioma: "Latín"
-                }
-            },
-            // 5. Piri Reis (1513)
-            {
-                titulo: "Mapas de Piri Reis",
-                pais: "IMPERIO OTOMANO (Turquía)",
-                fecha: "1513",
-                imagen: "./assets/maps/era4_map5_pirireis.webp",
-                dato_rapido: "El mapa misterioso que citó fuentes perdidas de Cristóbal Colón para mostrar las Américas.",
-                tipo: "Carta náutica (Portulano)",
-                importancia: "Muestra la capacidad de compilación cartográfica otomana, uniendo conocimientos árabes y europeos de exploración.",
-                ficha: {
-                    material: "Piel de gacela",
-                    dimensions: "Fragmento superviviente de aprox. 90 x 63 cm",
-                    ubicacion: "Museo Topkapi, Estambul",
-                    idioma: "Turco Otomano"
-                }
-            },
-            // 6. Proyección de Mercator (1569)
-            {
-                titulo: "Proyección de Mercator",
-                pais: "FLANDES (Bélgica)",
-                fecha: "1569",
-                imagen: "./assets/maps/era4_map6_mercator.webp",
-                dato_rapido: "El estándar que **deformó el mundo** para que los navegantes pudieran trazar rutas de rumbo constante (líneas rectas).",
-                tipo: "Mapamundi mural impreso (Proyección cilíndrica)",
-                importancia: "Revolucionó la navegación marítima transoceánica, siendo la solución matemática al problema de la navegación larga.",
-                ficha: {
-                    material: "Papel impreso (Grabado en cobre)",
-                    dimensions: "202 x 124 cm (montado en 18 hojas)",
-                    ubicacion: "Varios museos (Duisburgo original)",
-                    idioma: "Latín"
-                }
-            },
         ]
     },
     {
@@ -440,38 +248,6 @@ const historiaMapas = [
                     idioma: "Francés"
                 }
             },
-            // 2. Halley (1686)
-            {
-                titulo: "Mapas Temáticos de Halley",
-                pais: "REINO UNIDO (Royal Society)",
-                fecha: "1686",
-                imagen: "./assets/maps/era5_map2_halley.webp",
-                dato_rapido: "El abuelo de la visualización de datos (Data Viz). Primer mapa que muestra fuerzas invisibles (vientos).",
-                tipo: "Carta meteorológica",
-                importancia: "Inventó el uso de flechas y líneas para indicar dirección y flujo de datos, clave para la navegación comercial.",
-                ficha: {
-                    material: "Papel impreso",
-                    dimensions: "Ilustración para publicación científica",
-                    ubicacion: "Londres",
-                    idioma: "Inglés"
-                }
-            },
-            // 3. Carte de Cassini (S. XVIII)
-            {
-                titulo: "Cartografía Topográfica (Carte de Cassini)",
-                pais: "FRANCIA",
-                fecha: "Siglo XVIII",
-                imagen: "./assets/maps/era5_map3_cassini.webp",
-                dato_rapido: "El primer mapa nacional completo y detallado del mundo (180 hojas medulares).",
-                tipo: "Mapa topográfico detallado (Escala 1:86,400)",
-                importancia: "Estableció el estándar visual de los mapas modernos: carreteras, ríos, bosques, todo medido por geodesia sistemática.",
-                ficha: {
-                    material: "180 hojas de papel montadas",
-                    dimensions: "Gran tamaño",
-                    ubicacion: "Francia (Todo el territorio)",
-                    idioma: "Francés"
-                }
-            },
             // 4. Smith (1815)
             {
                 titulo: "Mapas Geológicos de Smith",
@@ -485,22 +261,6 @@ const historiaMapas = [
                     material: "Grabado coloreado a mano (acuarela)",
                     dimensions: "2.6 x 1.8 metros",
                     ubicacion: "Londres",
-                    idioma: "Inglés"
-                }
-            },
-            // 5. Gran Proyecto Trigonométrico (S. XIX)
-            {
-                titulo: "Gran Proyecto Trigonométrico (India)",
-                pais: "INDIA (Imperio Británico)",
-                fecha: "1802–1871",
-                imagen: "./assets/maps/era5_map5_india_trig.webp",
-                dato_rapido: "La hazaña cartográfica más ambiciosa de la historia; midió la India entera 'a pie'.",
-                tipo: "Levantamiento topográfico imperial",
-                importancia: "Calculó por primera vez la altura exacta del Monte Everest. El control imperial se consolidó a través de la ciencia.",
-                ficha: {
-                    material: "Mapas de campaña y teodolitos gigantes",
-                    dimensions: "Miles de kilómetros de 'Cadenas de triangulación'",
-                    ubicacion: "Desde el Cabo Comorín hasta el Himalaya",
                     idioma: "Inglés"
                 }
             },
@@ -560,38 +320,6 @@ const historiaMapas = [
                     idioma: "N/A"
                 }
             },
-            // 3. Cartografía Satelital (1972)
-            {
-                titulo: "Cartografía Satelital (Programa Landsat)",
-                pais: "EE. UU. (NASA)",
-                fecha: "1972",
-                imagen: "./assets/maps/era6_map3_landsat.webp",
-                dato_rapido: "El ojo que todo lo ve. Primer satélite civil para monitorear la Tierra constantemente.",
-                tipo: "Imágenes de teledetección",
-                importancia: "Permitió monitorear cambios ambientales, deforestación y crecimiento urbano en tiempo real a escala global.",
-                ficha: {
-                    material: "Sensores multiespectrales",
-                    dimensions: "Cobertura global continua",
-                    ubicacion: "Órbita terrestre",
-                    idioma: "N/A"
-                }
-            },
-            // 4. Mapas Interactivos (2005)
-            {
-                titulo: "Google Maps / OSM",
-                pais: "SILICON VALLEY (EE.UU.) / GLOBAL",
-                fecha: "2005",
-                imagen: "./assets/maps/era6_map4_google_osm.webp",
-                dato_rapido: "La democratización absoluta: 'Tú eres el punto azul'. Cambió el comportamiento humano.",
-                tipo: "Aplicación Web / Móvil",
-                importancia: "Eliminó la necesidad de leer mapas complejos; introdujo rutas paso a paso y Street View.",
-                ficha: {
-                    material: "Interfaces digitales en la nube",
-                    dimensions: "Todo el planeta en tu bolsillo",
-                    ubicacion: "Internet",
-                    idioma: "N/A"
-                }
-            },
             // 5. Mapas 3D y Realidad Aumentada (2010s)
             {
                 titulo: "Mapas 3D y Realidad Aumentada (AR)",
@@ -604,22 +332,6 @@ const historiaMapas = [
                 ficha: {
                     material: "Nube de puntos (LiDAR) y fotogrametría",
                     dimensions: "Escala 1:1 (El mapa es del tamaño del territorio)",
-                    ubicacion: "N/A",
-                    idioma: "N/A"
-                }
-            },
-            // 6. Big Data y Cartografía Predictiva (Actualidad)
-            {
-                titulo: "Big Data y Cartografía Predictiva",
-                pais: "LA NUBE (Servidores Globales)",
-                fecha: "Actualidad",
-                imagen: "./assets/maps/era6_map6_big_data.webp",
-                dato_rapido: "Mapas que predicen el futuro: predicción de tráfico, brotes epidémicos, y optimización logística.",
-                tipo: "Algoritmos dinámicos en tiempo real",
-                importancia: "Ya no muestran solo 'qué hay ahí', sino 'qué está pasando' y 'qué pasará', gracias al Machine Learning y el flujo masivo de datos.",
-                ficha: {
-                    material: "Datos agregados de millones de sensores",
-                    dimensions: "Petabytes de información procesada por segundo",
                     ubicacion: "N/A",
                     idioma: "N/A"
                 }
@@ -675,12 +387,18 @@ function renderApp() {
                 ${epoca.nombre_corto}
             </h2>
             <p class="lead mb-4 text-secondary">${epoca.descripcion}</p>
-            <div class="row row-cols-1 row-cols-xl-2 g-4">
+            
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4"> 
         `;
 
         // C. Generar Cards (Highlights)
         epoca.highlights.forEach((mapa, indexMapa) => {
             const uniqueId = `ficha-${indexEpoca}-${indexMapa}`;
+            
+            // CONVERSIÓN DE **TEXTO** A HTML <strong>TEXTO</strong>
+            const datoRapidoHTML = mapa.dato_rapido.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            const importanciaHTML = mapa.importancia.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
 
             htmlContent += `
                 <div class="col">
@@ -701,12 +419,12 @@ function renderApp() {
                             <h3 class="card-title h4 mb-3">${mapa.titulo}</h3>
                             
                             <div class="dato-rapido mb-3">
-                                <i class="bi bi-lightbulb-fill text-warning"></i> ${mapa.dato_rapido}
+                                <i class="bi bi-lightbulb-fill text-warning"></i> ${datoRapidoHTML}
                             </div>
 
                             <ul class="list-unstyled small mb-3 text-secondary">
                                 <li class="mb-1"><strong>Tipo:</strong> ${mapa.tipo}</li>
-                                <li><strong>Importancia:</strong> ${mapa.importancia}</li>
+                                <li><strong>Importancia:</strong> ${importanciaHTML}</li>
                             </ul>
 
                             <button class="btn btn-outline-primary btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#${uniqueId}">
@@ -743,20 +461,48 @@ function renderApp() {
     mainContent.appendChild(spacer);
     
     // =======================================================
-    // D. INICIALIZACIÓN DE TOOLTIPS
+    // D. INICIALIZACIÓN DE TOOLTIPS y SCROLLSPY (CORREGIDO)
+    // Se ejecuta después de que el HTML dinámico fue insertado
     // =======================================================
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      // Inicializar cada tooltip
-      return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
 
-    // Inicializar ScrollSpy de Bootstrap
-    var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-    dataSpyList.forEach(function (dataSpyEl) {
-      new bootstrap.ScrollSpy(dataSpyEl)
-    });
+    function setupTooltipsAndScrollSpy() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+        dataSpyList.forEach(function (dataSpyEl) {
+          new bootstrap.ScrollSpy(dataSpyEl)
+        });
+    }
+
+    function setupDarkMode() {
+        const toggle = document.getElementById('darkModeToggle');
+        const body = document.documentElement;
+
+        const applyTheme = (theme) => {
+            body.setAttribute('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+            toggle.checked = (theme === 'dark');
+        };
+
+        let storedTheme = localStorage.getItem('theme');
+        if (!storedTheme) {
+            storedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        applyTheme(storedTheme);
+
+        toggle.addEventListener('change', () => {
+            const newTheme = toggle.checked ? 'dark' : 'light';
+            applyTheme(newTheme);
+        });
+    }
+
+    // Inicializamos las funciones después de que renderApp haya corrido.
+    setupTooltipsAndScrollSpy();
+    setupDarkMode();
 }
 
-// Ejecutar al cargar
 document.addEventListener('DOMContentLoaded', renderApp);

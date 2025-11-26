@@ -5,101 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Una Breve Historia de los Mapas - Investigación Académica" />
     <meta name="author" content="Omar Rojas" />
-    <title>A Brief History of Maps - Omar Rojas</title>
+    <title>Una Breve Historia de los Mapas - Omar Rojas</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/img/32x32.png" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link href="../css/styles.css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Ajustes para la barra de navegación fija */
+        /* Variables CSS */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #212529;
+            --secondary-text: #6c757d;
+            --card-bg: #ffffff;
+            --card-shadow: rgba(0, 0, 0, 0.05);
+            --border-color: #dee2e6;
+            --dato-rapido-bg: #f8f9fa;
+        }
+
+        [data-bs-theme="dark"] {
+            --bg-color: #121212; 
+            --text-color: #e0e0e0; 
+            --secondary-text: #b0b0b0; 
+            --card-bg: #181818; 
+            --card-shadow: rgba(0, 0, 0, 0.5); 
+            --border-color: #333333;
+            --dato-rapido-bg: #222222; 
+        }
+
+        /* Layout Base */
         body {
             position: relative;
-            /* **IMPORTANTE:** Agregamos padding para que el contenido no se oculte bajo la navbar fija */
             padding-top: 80px; 
+            overflow-x: hidden; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        /* Sidebar Fijo */
-        .sidebar {
-            position: sticky;
-            /* 80px para que empiece justo debajo de la Navbar fija */
-            top: 80px; 
-            height: calc(100vh - 80px);
-            overflow-y: auto;
-            border-right: 1px solid #dee2e6;
-            background-color: #fff;
-            z-index: 100;
-        }
-
-        /* Estilo del link activo en el menú lateral */
-        .sidebar .nav-link {
-            color: #6c757d;
-            border-radius: 5px;
-            margin-bottom: 5px;
-            transition: all 0.2s;
-            /* ** CAMBIO APLICADO: TAMAÑO DE FUENTE ** */
-            font-size: 0.9rem;
+        /* Estructura para Sticky Sidebar */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start; 
         }
         
-        .sidebar .nav-link:hover {
-            background-color: #e9ecef;
+        /* Navbar Fixes */
+        .navbar.fixed-top {
+            z-index: 1050; 
+            background-color: var(--bg-color) !important;
+            border-color: var(--border-color) !important;
         }
 
+        /* Navbar Active State Fix */
+        .navbar-nav .nav-link.active {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border-color: transparent !important; 
+            border-bottom: 2px solid transparent !important; 
+        }
+        
+        [data-bs-theme="dark"] .navbar-nav .nav-link.active {
+            color: var(--text-color) !important;
+            box-shadow: 0 2px 0 0 var(--text-color); 
+        }
+        
+        /* Colores de Navbar en Dark Mode */
+        [data-bs-theme="dark"] .navbar-nav .nav-link,
+        [data-bs-theme="dark"] .navbar-brand {
+            color: var(--text-color) !important;
+        }
+        [data-bs-theme="dark"] .navbar-toggler-icon {
+            filter: invert(1);
+        }
+        [data-bs-theme="dark"] .form-check-label i {
+            color: var(--text-color) !important;
+        }
+
+        /* Sidebar Sticky Real */
+        .sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 90px; 
+            height: calc(100vh - 90px); 
+            overflow-y: auto; 
+            background-color: var(--bg-color);
+            z-index: 100;
+            display: block; 
+        }
+        
+        /* FIX VISUAL: Hover y Active del Sidebar */
+        .sidebar .nav-link:hover {
+            background-color: #e9ecef !important; /* Light mode hover */
+        }
+        [data-bs-theme="dark"] .sidebar .nav-link:hover {
+            background-color: #333333 !important; /* Dark mode hover */
+        }
         .sidebar .nav-link.active {
-            background-color: #0d6efd; /* Color primario Bootstrap */
-            color: white;
+            background-color: #0d6efd !important; /* Force Blue Active BG */
+            color: white !important; /* Force White Active Text */
             font-weight: 500;
         }
 
-        /* Estilos de las Tarjetas de Mapas */
-        .map-card {
-            transition: transform 0.2s ease-in-out;
-        }
-        .map-card:hover {
-            transform: translateY(-5px);
+        /* Línea separadora del sidebar */
+        .sidebar::after {
+            content: "";
+            position: absolute;
+            top: 0;             
+            right: 0;           
+            width: 1px;         
+            height: 100%;       
+            background-color: var(--border-color); 
+            z-index: 1;
         }
         
-        .dato-rapido {
-            border-left: 4px solid #0d6efd;
-            background-color: #f8f9fa;
-            padding: 10px;
-            border-radius: 0 5px 5px 0;
-            font-style: italic;
-            font-size: 0.9rem;
+        /* Footer */
+        footer {
+            border-color: var(--border-color) !important;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        [data-bs-theme="dark"] footer {
+            background-color: var(--bg-color) !important;
         }
 
+        /* Tarjetas */
+        .map-card {
+            background-color: var(--card-bg);
+            box-shadow: 0 0.5rem 1rem var(--card-shadow);
+            border: 1px solid var(--border-color);
+        }
+        [data-bs-theme="dark"] .map-card {
+             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Imágenes y Homogeneidad */
         .img-container {
-            height: 250px;
+            height: 250px !important; 
             overflow: hidden;
             background-color: #e9ecef;
         }
-        
         .img-container img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover !important; 
         }
         
-        /* Ajuste para textos académicos en sidebar */
+        /* Estilos del Sidebar */
+        .sidebar .nav-link {
+            color: var(--secondary-text);
+            font-size: 0.9rem; 
+            display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .card-body .text-muted, .academic-credits {
+            color: var(--secondary-text) !important;
+        }
         .academic-credits {
-            font-size: 0.75rem; 
-            line-height: 1.4;
+            font-size: 0.8rem; line-height: 1.5; 
+        }
+        .academic-credits p {
+            margin-bottom: 0.8rem;
         }
     </style>
 </head>
 
 <body class="d-flex flex-column h-100" data-bs-spy="scroll" data-bs-target="#navbar-epocas" data-bs-offset="120" tabindex="0">
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/navbar-logo.svg" alt="Logo" height="30">
+            
+            <a class="navbar-brand fs-4 fw-light" href="../index.html">
+                Omar Rojas Martínez
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -118,30 +201,40 @@
                     <li class="nav-item" id="contact">
                         <a class="nav-link" href="../about.html">About</a>
                     </li>
+
+                    <li class="nav-item d-flex align-items-center ms-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                            <label class="form-check-label" for="darkModeToggle">
+                                <i class="bi bi-moon-fill" id="darkModeIcon"></i>
+                            </label>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid flex-shrink-0">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row content-row">
             
-            <nav id="navbar-epocas" class="col-md-3 col-lg-2 d-none d-md-block sidebar py-4 px-3">
-                
-                <h5 class="mb-4 text-dark fw-bold">Línea de tiempo</h5>
-                
+            <nav id="navbar-epocas" class="col-md-3 col-lg-2 d-none d-md-block sidebar py-2 px-3">
+                <h5 class="mb-1 fw-bold">Línea de tiempo</h5>
                 <ul id="sidebar-list" class="nav flex-column"></ul>
                 
-                <div class="mt-5 pt-3 border-top text-muted academic-credits">
-                    <p class="mb-2">
+                <div class="mt-4 pt-4 border-top text-muted academic-credits">
+                    
+                    <p>
                         Una investigación para la materia de <strong>Comunicación y medios</strong>.
                     </p>
-                    <p class="mb-2">
+
+                    <p>
                         Profesora: <br>
                         <a href="https://alejandramateos.com/" target="_blank" class="text-decoration-none fw-bold text-secondary">Alejandra Mateos</a>
                     </p>
-                    <p class="mb-0 text-secondary opacity-75">
-                        Especialidad en Diseño Multimedia, <br>
+                    
+                    <p class="mb-0 opacity-75">
+                        Especialidad en Diseño Multimedia<br>
                         <a href="https://edinba.inba.gob.mx/" target="_blank" class="text-decoration-none fw-bold text-secondary">EDINBA</a>.
                     </p>
                 </div>
@@ -152,18 +245,18 @@
                     <div class="spinner-border text-primary" role="status">
                         <span class="visually-hidden">Cargando...</span>
                     </div>
-                    <p class="mt-2">Cargando historia de los mapas...</p>
+                    <p class="mt-2">Cargando Historia de los Mapas...</p>
                 </div>
             </main>
 
         </div>
     </div>
 
-    <footer class="bg-white py-4 mt-auto border-top">
+    <footer class="py-4 mt-auto border-top">
         <div class="container px-5">
             <div class="row align-items-center justify-content-center flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0 text-black">Copyright &copy; Omar Rojas 2024</div>
+                    <div class="small m-0">Copyright &copy; Omar Rojas Martínez 2025</div>
                 </div>
             </div>
         </div>
@@ -172,7 +265,6 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/scripts.js"></script>
-    
     <script src="app.js"></script>
 
 </body>
